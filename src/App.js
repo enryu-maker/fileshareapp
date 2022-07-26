@@ -31,7 +31,6 @@ export default function App() {
             Body: file,
             Bucket: S3_BUCKET,
             Key: file.name,
-            mode:'cors'
         };
 
         myBucket.putObject(params)
